@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 300px 450px auto; /*define a quantidade de colunas (medidas em px, fr (fração) ou auto)*/
+    grid-template-rows: 200px 300px; /*define o tamanho de cada linha*/
+}
+
+.item{
+    background-color: red;
+    margin: 20px;
+}

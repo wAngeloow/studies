@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <main>
+        <table border="1"> <!--cria uma tabela e deixa a borda visível-->
+            <caption>Tabela de Pokemon</caption> <!--título/descrição da tabela-->
+
+            <!--thead = head-->
+            <!--tbody = body-->
+            <!--tfoot = footer-->
+            <!--tr = linha-->
+            <!--th = cabeçalho-->
+            <!--td = coluna-->
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>IMG</th>
+                    <th>Nome</th>
+                    <th colspan="2">Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>#001</th>
+                    <td><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur" width="48" height="48"></td>
+                    <td>Bulbasaur</td>
+                    <td>Grama</td>
+                    <td>Veneno</td>
+                </tr>
+                <tr>
+                    <th>#002</th>
+                    <td><img src="https://img.pokemondb.net/artwork/large/charmander.jpg" alt="Charmander" width="48" height="48"></td>
+                    <td>Charmander</td>
+                    <td colspan="2">Fogo</td>
+                </tr>
+                <tr>
+                    <th>#003</th>
+                    <td><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" alt="Squirtle" width="48" height="48"></td>
+                    <td>Squirtle</td>
+                    <td colspan="2">Água</td>
+                </tr>
+                <tr>
+                    <th>#004</th>
+                    <td><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/025.png" alt="Pikachu" width="48" height="48"></td>
+                    <td>Pikachu</td>
+                    <td colspan="2">Elétrico</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!--rowspawn utiliza 2 linhas-->
+                    <!--colspawn utiliza 4 colunas-->
+                    <td rowspan="2">2 linhas</td>
+                    <td colspan="4">4 colunas</td>
+                </tr>
+                <tr>
+                    <td colspan="2">coluna 1</td>
+                    <td colspan="2">coluna 2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

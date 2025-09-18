@@ -1,0 +1,86 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-color: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*joga um item pra cada lado*/
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* CSS GRID*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto; /*alinha os itens ao meio*/
+    grid-gap: 20px;
+}
+
+.grid > div:nth-child(n+4){ /*pega o filho dentro da div, neste caso, apartir do 5° item*/
+    background: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.grid > div.anuncio{
+    background: gray;
+    grid-column: 1; /*coloca o anúncio na coluna 1*/
+    grid-row: 2 / 5; /*coloca o anúncio na linha 2 até a linha 5*/
+    display: block; /*volta ao que era antes*/
+}
+
+/* PARTE RESPONSIVA*/
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid > div:nth-child(n+4){
+        display: block;
+    }
+    .grid > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1; /*muda a ordem dele, e põe no topo*/
+    }
+
+}

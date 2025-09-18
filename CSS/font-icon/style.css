@@ -1,0 +1,15 @@
+
+/*link de import da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Oswald:wght@200..700&display=swap');
+
+*{
+    font-family: "Lobster", sans-serif; /*colando a fonte na página*/
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 45px; /*altera o tamanho do ícone*/
+}

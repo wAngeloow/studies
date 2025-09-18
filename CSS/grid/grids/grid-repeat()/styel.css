@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(5, 200px); /*cria 5 colunas de 200px, fr, ou auto*/
+}
+
+.item{
+    background-color: red;
+    margin: 20px;
+}

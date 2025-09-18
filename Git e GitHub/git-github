@@ -1,0 +1,99 @@
+<div align="center">
+  <p>CONFIGURAÇÃO DO GIT</p>
+</div>
+
+````bash
+git config --global user.name "wAngeloow"
+````
+
+````bash
+git config --global user.email angelodonada@gmail.com
+````
+
+````bash
+git config --list #PARA VER SE FOI CONFIGURADO CERTO
+````
+
+--------------------------------------------------------------------------------------------------------
+
+<div align="center">
+  <p>BRANCH</p>
+</div>
+
+````bash
+git branch #MOSTRA A BRANCH ATUAL
+````
+
+````bash
+git branch nome-da-nova-branch #CRIA UMA NOVA BRANCH
+````
+
+````bash
+git checkout nome-do-branch #TROCA PARA OUTRA BRANCH
+````
+
+--------------------------------------------------------------------------------------------------------
+
+<div align="center">
+  <p>PULL E FETCH</p>
+</div>
+
+````bash
+git fetch origin #BAIXA AS ALTERALÇÕES FEITAS NO REPOSITÓRIO, MAS NÃO INTEGRA
+````
+
+````bash
+git pull origin main #BAIXA E INTEGRA AS ALTERAÇÕES
+````
+
+--------------------------------------------------------------------------------------------------------
+
+<div align="center">
+  <p>ENVIAR CÓDIGO PARA O GITHUB</p>
+</div>
+
+````bash
+git init 
+````
+
+````bash
+git add . 
+````
+
+````bash
+git commit -m "primeiro commit"
+````
+
+````bash
+git branch -M main
+````
+
+````bash
+git remote add origin link-do-repositório
+````
+
+````bash
+git push -u origin main #ENVIA ARQUIVO
+````
+
+--------------------------------------------------------------------------------------------------------
+
+<div align="center">
+  <p>CLONAGEM DE REPOSITÓRIO</p>
+</div>
+
+```bash
+git clone https://github.com/usuario/nome-do-repositorio.git . #PUXA TODOS ARQUIVOS PARA DENTRO DO VSCODE
+````
+
+````bash
+git add .
+````
+
+````bash
+git commit -m "descrição das mudanças que você fez"
+````
+
+````bash
+git push origin main #ENVIA AS MUDANÇAS PARA O REPOSITÓRIO
+````

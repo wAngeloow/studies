@@ -1,0 +1,27 @@
+/*JUSTIFY E ALIGN*/
+.container {
+    display: flex;
+    justify-content: center;
+    /* Alinha itens no centro horizontalmente */
+    align-items: center;
+    /* Alinha itens no centro verticalmente */
+    height: 200px;
+    /* Necessário para visualizar o alinhamento vertical */
+
+    gap: 10px; /*só funciona dentro de flexbox e grid layout*/
+    background-color: brown;
+}
+
+.item {
+    background-color: teal;
+    padding: 10px;
+}
+
+/*TEXT-CENTER*/
+.text-container {
+    text-align: center;
+    /* Alinha o texto no centro horizontalmente */
+
+    height: 100px;
+    background-color: goldenrod;
+}

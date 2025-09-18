@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos e iFrames</title>
+</head>
+<body>
+    <main>
+        <div>
+            <!--poster = define uma capa para o video-->
+            <!--controls = adiciona os controles de play, pause, volume, etc.-->
+            <!--autoplay = inicia o video sozinho-->
+            <!--loop = o video começa novamente após terminar-->
+            <!--muted = retira o som-->
+            <!--disablepictureinpicture = remove a opção de ecra-->
+
+            <!--colocar video baixado-->
+            <video src="video/GTA6.mp4"
+             width="640" height="360"
+             poster="https://www.indy100.com/media-library/gta-vi-trailer-with-franklin-michael-and-trevor.jpg?id=52125227&width=1245&height=700&quality=85&coordinates=0%2C0%2C0%2C0"
+             controls
+             muted
+             disablepictureinpicture>
+
+             <!--legendas (precisa ser no formato .vtt)-->
+             <track src="legendas/english.vtt" kind="subtitles" srclang="en" label="English" default>
+             <track src="legendas/espanol.vtt" kind="subtitles" srclang="es" label="Español">
+             <track src="legendas/français.vtt" kind="subtitles" srclang="fr" label="Français">
+             <track src="legendas/portugues.vtt" kind="subtitles" srclang="pt-br" label="Português">
+
+             Seu navegador não suporta a TAG video
+            </video>
+
+            <!--colocar video do YouTube ou outra plataforma-->
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/ii-KRRt13o4?si=UVGvYdfeuAyfWYI-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <!--abre uma outra página ou site html-->
+            <iframe src="../css/animation/rotate/index.html"
+            width="640" height="360"></iframe>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress e Meter</title>
+</head>
+<body>
+    <div>
+        <progress value="50" max="100">50%</progress>
+    </div>
+
+    <div>
+        <label for="nivel">Nível de satisfação:</label>
+
+        <!--
+        value="70" é o valor atual
+        min="0" o valor mínimo
+        max="100" o valor máximo
+        low="30" valor abaixo da considerada baixa
+        high="80" valor acima da da considera alta
+        optimum="90"> valor ótimo para medição
+
+        OBS: cada nível muda a cor
+        -->
+        <meter id="nivel"
+        value="25"
+        min="0"
+        max="100"
+        low="30"
+        high="80"
+        optimum="90">
+    </meter>
+
+    </div>
+    <p>A medição de satisfação está em: 25%</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso PHP</title>
+</head>
+<body>
+    <form method="post" action="switch.php">
+        Número: <input type="number" name="num" required> <br>
+        <fieldset><legend>Operações:</legend>
+        <input type="radio" name="operacao" id="dobro" value="1" checked>
+        <label for="dobro">Dobro</label>
+        <input type="radio" name="operacao" id="cubo" value="2">
+        <label for="cubo">Cubo</label>
+        <input type="radio" name="operacao" id="raiz" value="3">
+        <label for="raiz">Raiz quadrada</label>
+        </fieldset>
+
+        <br>
+
+        Dias das semana:
+        <input type="number" name="diasemana" min="1" max="7">
+
+        <br><br>
+
+        <input type="submit" value="Enviar e Calcular Dados">
+    </form>
+</body>
+</html>

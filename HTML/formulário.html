@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <!--method="post" = deixa a informação do form oculta na URL (passa a informação pelo servidor)-->
+        <!--method="get" = deixa a informação do form visível na URL (passa a informação pela URL)-->
+        <form onsubmit="return MinhaAcaoJS(this)">
+
+            <!--ID = indentificador para ser estilizado no CSS-->
+            <!--NAME = o nome do campo que será enviado quando o form for submetido-->
+            <!--FOR = ao clica no nome do formulário ele já começa escrever-->
+
+            <!--para inserir um texto-->
+            <div>
+                <!--o "label" referencia o "id", por isso leva o mesmo nome-->
+                <!--o "for" faz com que ao clicar no texto do "label" já selecione o "input" para digitar-->
+                <label for="idtexto">Texto:</label>
+                <input type="text" id="idtexto" name="idtexto">
+            </div>
+
+            <!--para inserir uma senha-->
+            <div>
+                <label for="idpassword">Senha:</label>
+                <input type="password" id="idpassword" name="idpassword">
+            </div>
+            
+            <!--para inserir um email-->
+            <div>
+                <label for="idemail">Email:</label>
+                <input type="email" id="idemail" name="idemail">
+            </div>
+
+            <!--para inserir números-->
+            <div>
+                <label for="idnumber">Número:</label>
+                <input type="number" id="idnumber" name="idnumber" min="0" max="19">
+            </div>
+
+            <!--para inserir um telefone-->
+            <div>
+                <label for="idtel">Telefone:</label>
+                <input type="tel" id="idtel" name="idtel" placeholder="(DDD) 900000000">
+            </div>
+
+            <!--permite ao usuário inserir uma URL-->
+            <div>
+                <label for="idurl">URL:</label>
+                <input type="url" id="idurl" name="idurl" placeholder="http://www.exemplo.com">
+            </div>
+
+            <!--para inserir uma data com (ano, mês e dia)-->
+            <div>
+                <label for="iddate">Data:</label>
+                <input type="date" id="iddate" name="iddate">
+            </div>
+
+            <!--para inserir hora (sem data)-->
+            <div>
+                <label for="idtime">Hora:</label>
+                <input type="time" id="idtime" name="idtime">
+            </div>
+
+            <!--para inserir data e hora-->
+            <div>
+                <label for="idtimehour">Data e Hora:</label>
+                <input type="datetime-local" id="idtimehour" name="idtimehour">
+            </div>
+
+            <!--para inserir um mês do ano-->
+            <div>
+                <label for="idmonth">Mês:</label>
+                <input type="month" id="idmonth" name="idmonth">
+            </div>
+
+            <!--para inserir uma semana do ano-->
+            <div>
+                <label for="idweek">Semana:</label>
+                <input type="week" id="idweek" name="idweek">
+            </div>
+
+            <!--para inserir uma cor através de um seletor-->
+            <div>
+                <label for="idcolor">Cor:</label>
+                <input type="color" id="idcolor" name="idcolor">
+            </div>
+
+            <!--para inserir um arquivo do sistema-->
+            <div>
+                <label for="idfile">Arquivo:</label>
+                <input type="file" id="idfile" name="idfile">
+            </div>
+
+            <!--permite criar uma caixa de seleção (seleciona várias ao mesmo tempo)-->
+            <div>
+                <label for="idcheck1">Check 1</label>
+                <input type="checkbox" id="idcheck1" name="idcheck" value="Check 1">
+                <label for="idcheck2">Check 2</label>
+                <input type="checkbox" id="idcheck2" name="idcheck" value="Check 2">
+                <label for="idcheck3">Check 3</label>
+                <input type="checkbox" id="idcheck13" name="idcheck" value="Check 3">
+            </div>
+
+            <!--permite criar uma bola de seleção (apenas um pode ser selecionado)-->
+            <div>
+                <label for="idradio1">Radio 1</label>
+                <input type="radio" id="idradio1" name="idradio" value="Radio 1">
+                <label for="idradio2">Radio 2</label>
+                <input type="radio" id="idradio2" name="idradio" value="Radio 2">
+                <label for="idradio3">Radio 3</label>
+                <input type="radio" id="idradio3" name="idradio" value="Radio 3">
+            </div>
+
+            <!--abre um menu com opções-->
+            <div>
+                <select name="selecao">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JS">JavaScript</option>
+                </select>
+            </div>
+
+            <!--cria uma linha que pode ser arrastável-->
+            <div>
+                <label for="idrange">Slider:</label>
+                <input type="range" id="idrange" name="idrange">
+            </div>
+
+            <!--cria um campo de pesquisa-->
+            <div>
+                <label for="idsearch">Pesquisa:</label>
+                <input type="search" id="idsearch" name="idsearch">
+            </div>
+
+            <!--cria uma caixa de texto-->
+            <div>
+                <label for="idtextarea">Caixa de Texto:</label>
+                <textarea name="idtexto" id="idtexto" rows="5" cols="50"></textarea>
+            </div>
+
+            <div>
+                <input type="image" name="idimage" id="idimage" src="https://cdn-icons-png.flaticon.com/512/9195/9195520.png" width="28" height="28"> <!--botão em forma de imagem-->
+                <input type="button" onclick="alert('Olá!')" value="Botão"> <!--cria um botão com uma ação (normalmente em JavaScript)-->
+                <input type="submit" value="Enviar Form"> <!--botão para enviar as informações-->
+                <input type="reset" value="Limpar"> <!--botão que reseta as informações-->
+            </div>
+        </form>
+    </main>
+    
+    <script src="scripts/formulário.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+h1 {
+    color: red;
+  }
+  
+  /* SINTAXE PADRÃO*/
+  @media screen and (max-width: 500px) {
+    h1 {
+      color: blue;
+    }
+  }
+  
+  /* OUTROS MODOS ALÉM DO PADRÃO:
+
+  all = tudo junto
+  print = quando tenta imprimir
+  screen = tela normal
+  speech = para leitores de tela
+  */
+
+  @media print and (max-width: 600px) {
+    h1 {
+      color: green;
+    }
+  }
+  
+  /* TODOS MODOS (usando "all" sem escrever "all")*/
+  /*max-width - se aplica para telas que tenham menos de 700px*/
+  @media (max-width: 700px) {
+    h2 {
+      color: purple;
+    }
+  }
+  
+  /*min-width - se aplica para telas que tenham mais de 200px*/
+  @media (min-width: 200px) {
+    h2 {
+      color: teal;
+    }
+  }
+  
+  /* AND na media query */
+  @media (min-width: 300px) and (max-width: 400px) {
+    h3 {
+      font-size: 3em;
+    }
+  }
+  
+  /* Orientation (landscape = tela do mobile deitada)*/
+  @media (orientation: landscape) {
+    h3 {
+      color: brown;
+    }
+  }
+  
+  /* OR na media query (se uma das duas opções for verdadeira, aplica o que ta dentro)*/
+  @media (max-width: 200px), (orientation: landscape) {
+    h3 {
+      font-size: 4em;
+    }
+  }
+  
+  /* Regras depois da MQ a sobreescrevem, o que tiver em cima se aplica a todo o resto, então, MQ sempre abaixo */
+  @media (min-width: 600px) {
+    h4 {
+      color: red;
+    }
+  }
+  
+  h4 {
+    color: blue;
+  }
+  
+  h5 {
+    font-size: 3em;
+  }
+  
+  /*MOBILE FIRST - Resoluções*/
+  /* 320px - 480px = mobile (em mobile first não precisa de MQ) */
+  h5 {
+    color: aqua;
+  }
+  
+  /* 480px - 768px = tablet */
+  @media (min-width: 480px) {
+    h5 {
+      color: burlywood;
+    }
+  }
+  
+  /* 768px - 1024px = telas menores, laptops */
+  @media (min-width: 768px) {
+    h5 {
+      color: cadetblue;
+    }
+  }
+  
+  /* 1024px - 1200px = desktop */
+  @media (min-width: 1024px) {
+    h5 {
+      color: coral;
+    }
+  }
+  
+  /* 1200 e + = telas maiores, tvs */
+  @media (min-width: 1200px) {
+    h5 {
+      color: darkorchid;
+    }
+  }

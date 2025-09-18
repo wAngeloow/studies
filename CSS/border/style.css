@@ -1,0 +1,68 @@
+.solid{
+    text-align: center;
+    border-style: solid;
+    border-color: red;
+    border-radius: 7px;
+}
+
+.dotted{
+    text-align: center;
+    border-style: dotted;
+    border-color: aqua;
+    border-radius: 7px;
+}
+
+.dashed{
+    text-align: center;
+    border-style: dashed;
+    border-color: blueviolet;
+    border-radius: 7px;
+}
+
+.double{
+    text-align: center;
+    border-style: double;
+    border-color: brown;
+    border-width: 4px;
+    border-radius: 7px;
+}
+
+.groove{
+    text-align: center;
+    border-style: groove;
+    border-color: yellow;
+    border-width: 10px;
+    border-radius: 7px;
+}
+
+.ridge{
+    text-align: center;
+    border-style: ridge;
+    border-color: violet;
+    border-width: 10px;
+    border-radius: 7px;
+}
+
+.inset{
+    text-align: center;
+    border-style: inset;
+    border-color: springgreen;
+    border-width: 6px;
+    border-radius: 7px;
+}
+
+.outset{
+    text-align: center;
+    border-style: outset;
+    border-color:peru;
+    border-width: 6px;
+    border-radius: 7px;
+}
+
+.multiple{
+    text-align: center;
+    border-style: dashed dotted inset dotted; /*topo, direito, baixo, esquerdo*/
+    border-color: deeppink;
+    border-width: 5px;
+    border-radius: 7px;
+}

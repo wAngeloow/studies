@@ -1,0 +1,39 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+}
+
+img{
+    max-width: 100%; /*deixa a imagem responsiva (sem scroll)*/
+    display: block; /*arruma os erros da imagem*/
+}
+
+div{
+    max-width: 200px;
+}
+
+#mask1{
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+#mask2{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#mask3{
+    clip-path: circle();
+}
+
+#mask4{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+#mask5{
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);;
+}
+
+#mask6{
+    clip-path: polygon(0 0, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 100% 0, 90% 50%, 65% 50%, 100% 100%, 0 100%, 35% 50%, 10% 50%);;
+}

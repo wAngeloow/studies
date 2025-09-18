@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body onload="alert('Terminou de carregar')" onresize="console.log('Houve um redirecionamento')">
+    <h1>Aprendendo JavaScript</h1>
+
+    <button ondblclick="clickDuplo()" onclick="eventoClick()">Mudar background</button>
+
+    <div id="mudacor" onmouseout="viraRoxo()" onmouseover="viraVermelho()" style="margin: auto auto; width: 100px; height: 100px; background-color: blue;"></div>
+
+    <br>
+
+    <input onkeydown="apertaTecla()" onfocus="limpaTexto()" id="inputText" type="text" placeholder="Digite algo" value="Algo já digitado">
+
+    <br>
+
+    <div id="teclas"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

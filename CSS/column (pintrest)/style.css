@@ -1,0 +1,36 @@
+body{
+    background-color: #121212;
+}
+
+p{
+    color: white;
+    column-count: 4; /*divide o texto em colunas*/
+    column-gap: 2em; /*da um espaçamente entre as colunas*/
+    column-rule: solid 3px rgb(255, 0, 0); /*adiciona linha de separação*/
+}
+
+img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+section.pintrest{
+    column-count: 7; /*divive as imagens em colunas*/
+    column-gap: 13px;
+}
+
+/*altera o tamanho das colunas para dispositivos móveis*/
+@media(min-width: 280px) and (max-width: 820px){
+    p{
+        column-count: 2;
+    }
+
+    section.pintrest{
+        column-count: 3;
+    }
+}

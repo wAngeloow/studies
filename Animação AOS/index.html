@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Animação AOS</title>
+
+</head>
+<body>
+
+    data-aos="fade-up" <!-- Define o tipo de animação, neste caso, um fade de baixo para cima -->
+    data-aos-offset="200" <!-- Define a distância (em pixels) de rolagem da página antes de iniciar a animação -->
+    data-aos-delay="50" <!-- Define o atraso (em milissegundos) antes da animação começar -->
+    data-aos-duration="1000" <!-- Define a duração (em milissegundos) da animação -->
+    data-aos-easing="ease-in-out" <!-- Define a curva de velocidade da animação -->
+    data-aos-mirror="true" <!-- Define se a animação deve ser reproduzida quando o elemento está rolando de volta -->
+    data-aos-once="false" <!-- Define se a animação deve ocorrer apenas uma vez ou toda vez que o elemento entrar na viewport -->
+    data-aos-anchor-placement="top-center" <!-- Define a posição do ponto de âncora da animação em relação ao viewport -->
+
+    <nav>
+        <ul 
+        data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-mirror="true"
+        data-aos-easing="ease-in-out">
+            <li>
+                <a href="https://github.com/michalsnik/aos" target="_blank">Repositório</a>
+            </li>
+            <li>
+                <a href="https://codepen.io/michalsnik/pen/WxNdvq" target="_blank">Animações 1</a>
+            </li>
+            <li>
+                <a href="https://codepen.io/michalsnik/pen/jrOYVO" target="_blank">Animações 2</a>
+            </li>
+            <li>
+                <a href="https://codepen.io/michalsnik/pen/EyxoNm" target="_blank">Animações 3</a>
+            </li>
+            <li>
+                <a href="https://codepen.io/michalsnik/pen/WxvNvE" target="_blank">Animações 4</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <img 
+        data-aos="zoom-in"
+        data-aos-duration="800"
+        data-aos-delay="500"
+        data-aos-easing="ease-in-out"
+        src="https://images8.alphacoders.com/475/475899.jpg"
+        width="450px">
+    </div>
+
+    <div>
+        <img 
+        data-aos="flip-down"
+        data-aos-duration="800"
+        data-aos-delay="1000"
+        data-aos-easing="ease-in-out"
+        src="https://i.pinimg.com/736x/29/fd/b6/29fdb6b78866bc04a260b6713f9b96f7.jpg"
+        width="200px">
+    </div>
+
+    <div>
+        <img 
+        data-aos="flip-right"
+        data-aos-duration="800"
+        data-aos-delay="1500"
+        data-aos-easing="ease-in-out"
+        src="https://i.pinimg.com/originals/c1/e8/b4/c1e8b4e4043fe4564a1c0a4cd5692154.jpg"
+        width="350px">
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

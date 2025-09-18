@@ -1,0 +1,28 @@
+body{
+    background-color: #111827;
+}
+
+.container{
+    display: flex; /*é resposivo por padrão*/
+    flex-direction: row; /*row, row-reverse, column-reverse, (muda a direção que será o flex)*/
+    flex-wrap: wrap; /*quando não couber mais elementos na tela ele vai quebrar para linha de baixo*/
+    justify-content: center; /*space-between, space-around (msm espaço em cada um), space-evenly, end, start*/
+    gap: 5px 5px; /*(linha, coluna)*/
+    background-color: #64748b;
+    height: 500px;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: #4338ca;
+}
+
+.item-3{
+    order: 2; /*muda a ordem de apenas um item (sendo 0 o padrão)*/
+    align-self: flex-end; /*muda a posição apenas de um item*/
+}
+
+.item-5{
+    order: 1;
+}

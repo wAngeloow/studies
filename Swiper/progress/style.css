@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    padding: 200px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*COR BARRA DE PROGRESSO*/
+.swiper-pagination-progressbar {
+    background-color: rgba(238, 8, 219, 0.425);
+}
+
+/*COR BARRA DE PROGRESSO (O PROGRESSO EM SI)*/
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: rgb(195, 0, 255);
+}

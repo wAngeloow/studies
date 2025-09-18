@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+.container{
+    width: 100%;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.elemento{
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+
+    transition-delay: 1ms; /*tempo que leva para iniciar*/
+    transition-duration: 3s; /*duração do efeito*/
+    transition-timing-function: ease-in; /*coloca o efeito desejado*/
+    transition-property: all; /*executa todas funções do hover*/
+}
+
+.elemento:hover{
+    border-radius: 50%;
+    transform: translateX(500px);
+}
+
+/*
+ease - especifica um efeito de transição com início lento, rápido e final lento (esse é o padrão);
+
+linear - especifica um efeito de transição com a mesma velocidade do início ao fim;
+
+ease-in - especifica um efeito de transição com um início lento.
+
+ease-out - especifica um efeito de transição com um final lento
+.
+ease-in-out - especifica um efeito de transição com início e fim lentos;
+*/

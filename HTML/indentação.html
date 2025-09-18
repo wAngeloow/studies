@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identação</title>
+</head>
+<body>
+
+    <!-- Cabeçalho do site com navegação -->
+    <header>
+        <h1>CABEÇALHO</h1>
+        <nav>
+            <!-- Links de navegação (coloque aqui seus links) -->
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Conteúdo principal do site -->
+    <main>
+        <h2>Conteúdo Principal</h2>
+
+        <!-- Exemplo de bloco padrão -->
+        <div>
+            <p>Este é um bloco padrão.</p>
+        </div>
+
+        <!-- Bloco com imagem usando <figure> e <figcaption> -->
+        <div>
+            <figure>
+                <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/11/o-que-e-html.jpg" alt="Imagem ilustrando HTML" height="40%" width="40%">
+                <figcaption>Descrição da imagem</figcaption>
+            </figure>
+        </div>
+
+        <!-- Bloco com imagem usando <picture> para controle de resolução -->
+        <div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="https://media.licdn.com/dms/image/v2/D5612AQE8NiooxTxA3w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695825196046?e=2147483647&v=beta&t=2zU71mKLxGihkNQB5eMDjCgbD7srasN1gyEqowXMGV4">
+                <img src="https://media.licdn.com/dms/image/v2/D5612AQE8NiooxTxA3w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695825196046?e=2147483647&v=beta&t=2zU71mKLxGihkNQB5eMDjCgbD7srasN1gyEqowXMGV4" alt="Imagem HTML" height="40%" width="40%">
+                <figcaption>Descrição da imagem</figcaption>
+            </picture>
+        </div>
+
+        <!-- Elementos inline com <span> -->
+        <p>
+            <span>Tag inline 1</span> 
+            <span>Tag inline 2</span>
+        </p>
+
+        <!-- Exemplo de uso de <article> para artigos -->
+        <article>
+            <h3>Título do Artigo</h3>
+            <p>Este é um conteúdo de artigo. Pode conter textos, imagens, vídeos, etc.</p>
+        </article>
+
+        <!-- Seção para agrupar conteúdo relacionado -->
+        <section>
+            <h3>Sessão relacionada</h3>
+            <p>Esta seção pode ser usada para agrupar conteúdos relacionados, como vídeos, itens de compras, etc.</p>
+        </section>
+
+        <!-- Bloco <aside> para conteúdo secundário, como anúncios -->
+        <aside>
+            <h3>Publicidade</h3>
+            <p>Aqui ficam os conteúdos menos importantes, como anúncios ou links externos.</p>
+        </aside>
+
+    </main>
+
+    <hr>
+
+    <!-- Rodapé do site -->
+    <footer>
+        
+        <!--usado para fornecer um endereço físico ou de contato-->
+        <address>
+            Contate-nos: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a><br>
+            Rua Exemplo, 123 - Cidade, Estado.
+        </address>
+
+        <p>Direitos reservados &copy; 2024</p>
+    </footer>
+
+</body>
+</html>

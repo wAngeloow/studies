@@ -1,0 +1,58 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+}
+
+img{
+    max-width: 100%; /*deixa a imagem responsiva (sem scroll)*/
+    display: block; /*arruma os erros da imagem*/
+}
+
+#filtro1 img{
+    filter: blur(3px); /*aplica bluer (medidas de vh, px, rem)*/
+}
+
+#filtro2{
+    filter: grayscale(.7); /*aplicar cinza na img*/
+}
+
+#filtro3{
+    filter: sepia(.6); /**/
+}
+
+#filtro4{
+    filter: saturate(4); /*aplica saturação na imagem*/
+}
+
+#filtro5{
+    filter: hue-rotate(45deg); /*rota o circulo de cores em graus*/
+}
+
+#filtro6{
+    filter: invert(1); /*inverte as cores*/
+}
+
+#filtro7{
+    cursor: pointer;
+    filter: opacity(9);
+    transition: 1s ease-in-out;
+}
+
+#filtro7:hover{
+    filter: opacity(.6);
+}
+
+#filtro8{
+    filter: brightness(.5); /*escurece ou clareia a imagem*/
+}
+
+#filtro9{
+    filter: contrast(10); /*mexe no contraste da imagem*/
+}
+
+#filtro10{
+    /*Se a imagem for PNG, irá aplicar sombra dentro dos elementos da imagem, se não for PNG, irá aplicar igual o box-shadow, apenas no quadrado da div*/
+    filter: drop-shadow(5px 5px 5px #000);
+}

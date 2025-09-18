@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    'header header'
+    'aside article'
+    'section section'
+    'footer footer';
+    grid-auto-rows: 200px; /*define o tamanho automatico de cada área*/
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+}
+
+aside{
+    grid-area: aside;
+    background-color: burlywood;
+}
+
+article{
+    grid-area: article;
+    background-color: chocolate;
+}
+
+section{
+    grid-area: section;
+    background-color: darkolivegreen;
+}
+footer{
+    grid-area: footer;
+    background-color: hotpink;
+}

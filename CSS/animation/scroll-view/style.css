@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*esconde a scroll bar*/
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
+header{
+    width: 100vw;
+    height: 70vh;
+    background-image: url('https://rare-gallery.com/mocahbig/39134-Programming-ProgrammerEat-Sleep-Code-Repeat.png');
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(0, 119, 255);
+}
+
+/*título*/
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+/*linha azul*/
+h1::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: rgb(0, 119, 255);
+    bottom: 0;
+    right: 15px;
+    border-radius: 5px;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: rgb(0, 119, 255);
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+
+/*link*/
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    font-size: 1.5rem;
+    margin-inline: auto;
+    width: min(60ch, 100%);
+}
+
+/*paragráfos*/
+.esquerda{
+    animation: esquerda 1ms ease-in-out;
+    animation-timeline: view(); /*efeito aparece quando você visualizar aquele item */
+    animation-range: cover 0% cover 75%;
+}
+
+.direita{
+    animation: direita 1ms ease-in-out;
+    animation-timeline: view(); /*efeito aparece quando você visualizar aquele item */
+    animation-range: cover 0% cover 75%;
+}
+
+
+/*scroll indicador de rolagem*/
+.indicador{
+    background-color: rgb(0, 119, 255);
+    height: 10px;
+    position: fixed;
+    transform-origin: left;
+    inset: 0;
+    animation: indicador 1ms ease-in-out;
+    animation-timeline: scroll(); /*efeito aparece conforme rola a tela*/
+}
+
+/*animaçõs*/
+@keyframes esquerda{
+    from{
+        opacity: 0;
+        translate: -100vw 0;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes direita{
+    from{
+        opacity: 0;
+        translate: 100vw 0;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes indicador{
+    from{
+        scale: 0 1;
+    }
+    to{
+        scale: 1 1;
+    }
+}

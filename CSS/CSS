@@ -1,0 +1,42 @@
+SELETORES COMPOSTOS:
+- elemento, elemento: Aplica a vários elementos (ex.: h1, h2).
+- elemento > filho: Seleciona um filho direto (ex.: div > p).
+- elemento + irmão: Seleciona o elemento imediatamente após o anterior (ex.: h1 + p).
+- elemento ~ irmão: Seleciona todos os elementos irmãos seguintes (ex.: h1 ~ p).
+
+-------------------------------------------------------------
+
+PSEUDO-CLASSES:
+- :hover: Para quando o usuário passa o mouse sobre um elemento.
+- :nth-child(): Para selecionar elementos com base em suas posições.
+Pseudo-elementos:
+- ::before: Insere conteúdo antes do conteúdo do elemento.
+- ::after: Insere conteúdo após o conteúdo do elemento.
+-------------------------------------------------------------
+
+TAMANHO:
+- rem; (relativo ao tamanho da fonte do html)
+- em; (relativo ao tamanho da fonte do elemento pai)
+- px; (unidade fixa de pixels)
+- % (relativo ao tamanho do elemento pai)
+- vw; (relativo à largura da janela de visualização)
+- vh; (relativo à altura da janela de visualização)
+
+-------------------------------------------------------------
+
+POSITION:
+- relative: vai no elemento pai;
+- absolute: coloca no elemento filho, ele começa a ter uma posição absoluta em relação ao elemento pai definido, como por exemplo um container;
+
+-------------------------------------------------------------
+
+MEDIA QUERIES:
+@media (min-width: px) and (max-width: px) {
+  .conteudo{
+  }
+}
+
+-------------------------------------------------------------
+
+TRANSFORM:
+- transform: skew(-10deg); entorta o item em graus
