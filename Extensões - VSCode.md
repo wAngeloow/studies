@@ -17,8 +17,8 @@
 - **Figma for VS Code** — *Figma*  
   Acesse arquivos Figma diretamente do VS Code.
 
-- **Image Preview** — *Nerds Inc.*  
-  Visualize imagens diretamente no editor.
+- **Image** — *Nerds Inc.*  
+  Converta imagens para png, jpg, avif, ou webp.
 
 ## 🐘 PHP
 
@@ -39,4 +39,6 @@
 - **vscode-pdf** — *tomoki1207*  
   Visualizador de arquivos PDF embutido no VS Code.
 
+- **W3C Web Validator** - *Celian Riboulet*
+  Valida arquivos HTML e CSS diretamente no VS Code utilizando os serviços oficiais de validação do W3C.
 ---

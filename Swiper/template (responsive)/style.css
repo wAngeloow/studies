@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.swiper{
+  width: 100%;
+  height: 500px;
+  padding-bottom: 30px;
+}
+
+.swiper-slide{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estio do botão de voltar*/
+.swiper-button-prev{
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.meu-card{
+    width: 350px;
+    height: 350px;
+    background-color: red;
+}
